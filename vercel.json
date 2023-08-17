@@ -1,5 +1,5 @@
 {
-  "version": "2",
+  "version": 2,
   "builds": [
     {
       "src": "app.js",
@@ -7,9 +7,7 @@
     }
   ],
   "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/app.js"
-    }
+    { "handle": "filesystem" },
+    { "src": "/app.js", "dest": "/app.js" }
   ]
 }
